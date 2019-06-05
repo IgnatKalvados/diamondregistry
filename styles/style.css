@@ -35,6 +35,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-image: url("../images/bg.png");
+  block-size: cover;
+  background-repeat: no-repeat;
 }
 
 header .top_head {
@@ -171,7 +173,7 @@ header .header_content .form {
 }
 
 header .header_content .form .form_container {
-  min-width: 465px;
+  max-width: 465px;
   margin: 0 auto;
 }
 
@@ -214,9 +216,9 @@ header .header_content .form .form_container div input {
   border-radius: 50px;
 }
 
-header .header_content .form .form_container div input .last {
+header .header_content .form .form_container div input #last {
   border-radius: 10px;
-  height: 80px;
+  height: 50px;
 }
 
 header .header_content .form .form_container .more_options {
