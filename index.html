@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/style.css">
-    
+    <link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="FlexSlider/jquery.flexslider.js"></script>
     <title>Diamonds</title>
 </head>
 <body>
@@ -45,14 +47,85 @@
     </header>
     <section class="who_we_are">
         <div class="container">
-            <div class="who_wrap">
+        <div class="who_wrap">
                 <h2>Diamond Registry is the world’s most comprehensive <br> diamond information platform.</h2>
+        <div class="who_content">
+            <div class="rings_foto">
+                <img src="images/photo1.png" class="foto_second" alt="rings1">
+                <img src="images/photo.png" class="foto_first" alt="rings">
+               
             </div>
-
+                <div class="who_text"><h5>We offer diamond education about sizes, shapes, the 4Cs and a wholesale average price list. Additionally, we help our customers to gain a better understanding about what they are looking for as well as diamonds and jewelry. Moreover, at Diamond Registry you can purchase loose diamonds, engagement rings, and any sort of custom made jewelry.</h5></div>
+                </div>
+        </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
+    <section class="blue_section">
+        <div class="container">
+        <div class="blue_section_content">
+            <div class="blue_content"> <img src="images/ic_1.svg" alt="diamant"> <h3>Help individuals to find the perfect diamond among our worldwide inventory.</h3> </div>
+
+            <div class="blue_content"> <img src="images/ic_2.svg" alt="diamant2"> <h3>Assist out client in designing their custom rings and jewelry.</h3></div>
+
+            <div class="blue_content"> <img src="images/ic_3.svg" alt="diamant3"> <h3>Help to save money by buying directly from the source at wholesale price.</h3></div>
+        </div>
+        </div>
+
+    </section>
+    <section class="clients_reviews">
+        <div class="container">
+            
+            <h2>Reviews from our clients</h2>
+            <div class="client_review_wrap">
+            <div class="flexslider carousel">
+            <ul class="slides">
+                <li class="clients">
+                    <h4>Mary L</h4>
+                    <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                    <img src="images/logo_Google.svg" alt="google">
+                    </div> -->
+                    <h5>Thank God that we have found out about Diamond Registry. Helped out with the engagement ring and our customised wedding bands as well. Provides such an excellent service with patience and is keen to details. No worries on changing the design on such short notice. Our experience went really great!</h5>
+                </li>
+                <li class="clients">
+                    <h4>Dan Johnson</h4>
+                    <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                        <img src="images/logo_Google.svg" alt="google">
+                    </div> -->
+                    <h5>Thank God that we have found out about Diamond Registry. Helped out with the engagement ring and our customised wedding bands as well. Provides such an excellent service with patience and is keen to details. No worries on changing the design on such short notice. Our experience went really great!</h5>
+                </li>
+                <li class="clients">
+                    <h4>Сhristina H</h4>
+                    <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                        <img src="images/logo_Google.svg" alt="google">
+                    </div> -->
+                    <h5>We couldn’t recommend Diamond Registry more. Grace was so helpful and so fantastic throughout the process. Nothing was too much trouble and her recommendations were spot on. Amazing service! 10/10 - we are so happy with the finished product. Thank you!</h5>
+                </li>
+                <li class="clients">
+                        <h4>Mary L</h4>
+                        <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                        <img src="images/logo_Google.svg" alt="google">
+                        </div> -->
+                        <h5>I can't say enough good things about my experience. The dedication and time and efforts that Aysel put into finding me just the right diamond.Not only is she phenomenal at understanding the products but as well as understanding the needs of her clients. She went above and beyond to find the most amazing stone for me. I couldn't... </h5>
+                    </li>
+                     <li class="clients">
+                        <h4>Dan Johnson</h4>
+                        <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                            <img src="images/logo_Google.svg" alt="google">
+                        </div> -->
+                        <h5>Thank God that we have found out about Diamond Registry. Helped out with the engagement ring and our customised wedding bands as well. Provides such an excellent service with patience and is keen to details. No worries on changing the design on such short notice. Our experience went really great!</h5> 
+                    </li>
+                    <li class="clients">
+                        <h4>Сhristina H</h4>
+                        <!-- <div class="stars"><img src="images/stars.svg" alt="stars">
+                            <img src="images/logo_Google.svg" alt="google">
+                        </div> -->
+                        <h5>We couldn’t recommend Diamond Registry more. Grace was so helpful and so fantastic throughout the process. Nothing was too much trouble and her recommendations were spot on. Amazing service! 10/10 - we are so happy with the finished product. Thank you!</h5>
+                    </li> 
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
@@ -63,5 +136,17 @@
     <footer>
 
     </footer>
+    <script>
+            $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 210,
+                itemMargin: 15,
+                minItems: 2,
+                maxItems: 3
+              });
+            });
+          </script>
 </body>
 </html>
