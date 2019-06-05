@@ -35,7 +35,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-image: url("../images/bg.png");
-  block-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
