@@ -301,13 +301,262 @@ background-position: center;
         color: #262626;
         padding-top: 100px;
     }
-    // .client_review_wrap {
-    //     max-width: 1440px;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    // }
-    // .clients {
-    //     width: 30%;
-    // }
+    .client_review_wrap {
+        p {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 105px;
+            max-height: 12px; 
+            
+            span {
+                min-width: 15px;
+                min-height: 15px;    
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+// Education & Guides
+.education {
+    background: #fff;
+    h2 {
+        font-family: Libre Baskerville;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #262626;
+        padding-top: 150px;
+    }
+    .education_wrap {
+        p {
+        font-family: Libre Baskerville;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 36px;
+        color: #262626;
+        }
+    }
+}
+
+// section base
+.base {
+    background-image: url('../images/base.png');
+    max-width: 1440px;
+    height: 510px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    .base_wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .base_left {
+            
+            width: 50%;
+            h3 {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 36px;
+            color: #262626;
+            padding-right: 80px;
+            }
+        }
+        .base_right {
+        width: 50%;
+        position: relative;
+        &::after {
+            content: '';
+            height: 90%;
+            width: 1px;
+            background-color: #042C5B;
+            position: absolute;
+            left: -26px;
+            bottom: -10px;
+        }
+            h2 {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            color: #262626;
+            position: relative;
+            &::before {
+                content: ' ';
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: #042C5B;
+                position: absolute;
+                left: -30px;
+            }
+           
+            }
+            p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #555555;
+            padding-right: 60px;
+            }
+        }
+    }
+    
+}
+
+// news 
+.news {
+    background: #FFFFFF;
+    .news_wrap {
+        h2 {
+        font-family: Libre Baskerville;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #262626;
+        padding-top: 50px;
+        }
+        h4 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #042C5B;
+        }
+        p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #555555;
+        }
+    }
+}
+
+// instagramm 
+.insta {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    justify-content: flex-end;
+    .look {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+        font-family: Libre Baskerville;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        color: #262626;
+        }
+        button {
+        max-width: 171px;
+        height: 45px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #042C5B;
+        border-radius: 50px;
+        }
+    }
+    .foto_insta {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+       justify-content: end;
+       flex-wrap: wrap;
+       
+        img {
+        max-width: 199px;
+        max-height: 199px;
+        padding: 3px;
+        }
+    }
+}
+.featured {
+    background-color: #fff;
+    h2 {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #262626;
+    padding: 100px 0;
+    }
+    .featurd_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        
+    }
+}
+.questions {
+    background: #EAEAEA;
+    h2 {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #262626;
+    padding-top: 90px;
+    }
+    h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #555555;
+    }
 }
