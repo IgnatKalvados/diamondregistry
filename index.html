@@ -37,9 +37,9 @@
                 <div>Name <input type="text"></div>
                 <div>Email <input type="text"></div>
                 <div>Phone number <input type="text"></div>
-                <div>Additional <br> information <br>(weight(сt),<br> form diamond, budget) <input type="text" id="last"></div>
+                <div>Additional <br> information <br>(weight(сt),<br> form diamond, budget) <textarea type="text" id="last"> </textarea></div> 
                 <div class="more_options">More options ( Weight, form, color, clarity)</div>
-                <button>Send request</button>
+                <button type="submit">Send request</button>
             </div>
         </div>
         </div>
@@ -239,15 +239,45 @@
             <h2>Do you have any questions?</h2>
             <h5>Write your email and phone and we will contact you.</h5>
             <div class="footer_form">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                    <div class="inner-form">
+                      <div class="label">Name</div>
+                      <input type="text" placeholder="Jhon">
+                    </div>
+                    <div class="inner-form">
+                      <div class="label">Email</div>
+                      <input type="text" placeholder="Example@gmail.com">
+                    </div>
+                    <div class="inner-form">
+                      <div class="label">Phone number</div>
+                      <input type="text" placeholder="1234567890">
+                    </div>
+                 <button>send</button> 
             </div>
         </div>
     </section>
     <footer>
+        <div class="container">
+            <div class="footer_content">
+            <div class="logo_foot">
+                <img src="images/logo.png" alt="logo">
+                <!-- <p>World's most comprehensive diamond price and information platform. Helping individuals to find the perfect diamond, buying directly from the source at wholesale prices.</p> -->
+            </div>
+            <div class="ny_office">
+                <h3>New York Office</h3>
+                <p>580 5th Ave Suite 1200 New York NY 10036 USA</p><br>
+                <p>Phone: +1 212 575 0444 Fax: +1 212 575 0722</p>
+            </div>
+            <div class="hk_office">
+                <h3> Hong Kong Office</h3>
+                <p>6/F, Eubank Plaza, 9 Chiu Lung Street Central, Hong Kong </p><br>
+                <p>Phone：+852 2116 5311 Fax： +852 2116 5312</p>
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
 
+            </div>
+        </div>
+    </div>
     </footer>
     <script>
             $(window).load(function() {
