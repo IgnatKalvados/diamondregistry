@@ -26,8 +26,6 @@ img {
     width: 100%;
 }
 header {
-// max-width: 1440px;
-// max-height: 650px;
 display: flex;
 background-image: url('../images/bg.png');
 background-size: cover;
@@ -70,7 +68,7 @@ background-position: center;
             flex-direction: column;
             justify-content: space-between;
             padding-right: 20px;
-            width: 141px;
+            min-width: 141px;
             p {
                 color: #fff;
                 margin: 0;
@@ -107,9 +105,10 @@ background-position: center;
             padding-left: 50px;
             } 
             .form { 
+                height: 100%;
                 width: 100%;  
                 max-width: 605px;
-                min-height: 502px;
+                max-height: 502px;
                 background-color: #fff;
                 border-radius: 5px;
                 display: flex;
@@ -145,6 +144,11 @@ background-position: center;
                     border: 1px solid #EAEAEA;
                     box-sizing: border-box;
                     border-radius: 50px;
+                    outline: none;
+                    padding: 0 10px;
+                    }
+                    #last {
+                        height: 100%;
                     }
                 }
                 .more_options {
@@ -167,8 +171,10 @@ background-position: center;
                 }
             }
                 button {
+                    width: 100%;
+                    
                     margin: 0 auto;
-                    min-width: 280px;
+                    max-width: 280px;
                     min-height: 45px;
                     font-family: Montserrat;
                     font-style: normal;
@@ -176,14 +182,15 @@ background-position: center;
                     font-size: 16px;
                     line-height: 20px;
                     display: flex;
-                    align-items: center;
+                    align-content: center;
                     justify-content:  center;
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
                     color: #FFFFFF;
                     background: #042C5B;
                     border-radius: 50px;
-                    cursor: pointer;
+                    cursor: pointer;                    
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -195,8 +202,6 @@ background-position: center;
    background-color: #fff; 
     
     .who_wrap {
-        max-height: 716px;
-        max-width: 1024px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -257,10 +262,9 @@ background-position: center;
 // start third blue section
 .blue_section {
     background-color: #E1EEFD;
-    max-width: 1440px;
-    min-height: 311px;
     display: flex;
     align-items: center;
+    padding: 50px 0;
     .blue_section_content {
         display: flex;
         flex-direction: row;
@@ -307,6 +311,7 @@ background-position: center;
         padding-top: 100px;
     }
     .client_review_wrap {
+        
         p {
             display: flex;
             flex-direction: row;
@@ -320,6 +325,8 @@ background-position: center;
                 padding-left: 20px;
             }
         }
+        h5 {padding-right:  20px;}
+    
     }
 }
 
@@ -354,8 +361,6 @@ background-position: center;
 // section base
 .base {
     background-image: url('../images/base.png');
-    max-width: 1440px;
-    height: 510px;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -369,7 +374,7 @@ background-position: center;
         align-items: center;
         .base_left {
             
-            width: 50%;
+            width: 45%;
             h3 {
             font-family: Libre Baskerville;
             font-style: normal;
@@ -381,13 +386,14 @@ background-position: center;
             }
         }
         .base_right {
-        width: 50%;
+        padding: 30px 0;
+        width: 55%;
         display: flex;
         flex-direction: column;
         position: relative;
         &::after {
             content: '';
-            height: 90%;
+            height: 85%;
             width: 1px;
             background-color: #042C5B;
             position: absolute;
@@ -515,12 +521,13 @@ background-position: center;
         img {
         max-width: 199px;
         max-height: 199px;
-        padding: 3px;
+        padding: 1px;
         }
     }
 }
 .featured {
     background-color: #fff;
+    padding-bottom: 50px;
     h2 {
     font-family: Libre Baskerville;
     font-style: normal;
@@ -571,7 +578,8 @@ background-position: center;
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       padding-bottom: 150px;
+       padding-bottom: 50px;
+    //    padding-bottom: 150px;
        .label {
         font-family: Montserrat;
         font-style: normal;
@@ -584,6 +592,7 @@ background-position: center;
         margin-bottom: 15px;
        }
        input {
+        display: block;
         max-width: 290px;
         max-height: 44px;
         height: 100%;
@@ -591,6 +600,8 @@ background-position: center;
         border: 1px solid #BDBDBD;
         box-sizing: border-box;
         border-radius: 50px;
+        outline: none;
+        padding: 0 10px;
        } 
     }
 }
@@ -600,25 +611,54 @@ footer {
     background: #EAEAEA;
     border-top: 2px solid #fff;
     .footer_content {
-        display: grid;
-        grid-template-columns: repeat(4, 3fr);
+        flex-direction: row;   
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         padding: 100px 0;
-        
         .logo_foot {
-            padding-right: 50px;
+            width: 25%;
             img {
             max-width: 294px;
             max-height: 45px;
             }
+            p {
+                padding-top: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #555555;
+            }
         }
         .office {
-            padding-right: 50px; 
+            width: 17%;
+            // padding-right: 50px; 
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 30px;
             color: #555555; 
+            h3 {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #262626;
+            margin-top: 0;
+            }
+            .icons {
+                padding-top: 30px;
+                max-width: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
         }
     }    
 }

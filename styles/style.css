@@ -102,7 +102,7 @@ header .top_head .phone {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 20px;
-  width: 141px;
+  min-width: 141px;
 }
 
 header .top_head .phone p {
@@ -161,9 +161,10 @@ header .header_content h1 {
 }
 
 header .header_content .form {
+  height: 100%;
   width: 100%;
   max-width: 605px;
-  min-height: 502px;
+  max-height: 502px;
   background-color: #fff;
   border-radius: 5px;
   display: -webkit-box;
@@ -218,6 +219,12 @@ header .header_content .form .form_container div input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
+  outline: none;
+  padding: 0 10px;
+}
+
+header .header_content .form .form_container div #last {
+  height: 100%;
 }
 
 header .header_content .form .form_container .more_options {
@@ -247,8 +254,9 @@ header .header_content .form .form_container .more_options::before {
 }
 
 header .header_content .form button {
+  width: 100%;
   margin: 0 auto;
-  min-width: 280px;
+  max-width: 280px;
   min-height: 45px;
   font-family: Montserrat;
   font-style: normal;
@@ -258,9 +266,8 @@ header .header_content .form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -270,6 +277,7 @@ header .header_content .form button {
   background: #042C5B;
   border-radius: 50px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .who_we_are {
@@ -277,8 +285,6 @@ header .header_content .form button {
 }
 
 .who_we_are .who_wrap {
-  max-height: 716px;
-  max-width: 1024px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,14 +361,13 @@ header .header_content .form button {
 
 .blue_section {
   background-color: #E1EEFD;
-  max-width: 1440px;
-  min-height: 311px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 50px 0;
 }
 
 .blue_section .blue_section_content {
@@ -455,6 +460,10 @@ header .header_content .form button {
   padding-left: 20px;
 }
 
+.clients_reviews .client_review_wrap h5 {
+  padding-right: 20px;
+}
+
 .education {
   background: #fff;
 }
@@ -490,8 +499,6 @@ header .header_content .form button {
 
 .base {
   background-image: url("../images/base.png");
-  max-width: 1440px;
-  height: 510px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +526,7 @@ header .header_content .form button {
 }
 
 .base .base_wrap .base_left {
-  width: 50%;
+  width: 45%;
 }
 
 .base .base_wrap .base_left h3 {
@@ -533,7 +540,8 @@ header .header_content .form button {
 }
 
 .base .base_wrap .base_right {
-  width: 50%;
+  padding: 30px 0;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +554,7 @@ header .header_content .form button {
 
 .base .base_wrap .base_right::after {
   content: '';
-  height: 90%;
+  height: 85%;
   width: 1px;
   background-color: #042C5B;
   position: absolute;
@@ -719,11 +727,12 @@ header .header_content .form button {
 .insta .foto_insta img {
   max-width: 199px;
   max-height: 199px;
-  padding: 3px;
+  padding: 1px;
 }
 
 .featured {
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .featured h2 {
@@ -814,7 +823,7 @@ header .header_content .form button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .questions .footer_form .label {
@@ -834,6 +843,7 @@ header .header_content .form button {
 }
 
 .questions .footer_form input {
+  display: block;
   max-width: 290px;
   max-height: 44px;
   height: 100%;
@@ -842,6 +852,8 @@ header .header_content .form button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
+  outline: none;
+  padding: 0 10px;
 }
 
 footer {
@@ -851,15 +863,22 @@ footer {
 }
 
 footer .footer_content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (3fr)[4];
-      grid-template-columns: repeat(4, 3fr);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 100px 0;
 }
 
 footer .footer_content .logo_foot {
-  padding-right: 50px;
+  width: 25%;
 }
 
 footer .footer_content .logo_foot img {
@@ -867,13 +886,54 @@ footer .footer_content .logo_foot img {
   max-height: 45px;
 }
 
-footer .footer_content .office {
-  padding-right: 50px;
+footer .footer_content .logo_foot p {
+  padding-top: 20px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: #555555;
+}
+
+footer .footer_content .office {
+  width: 17%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+}
+
+footer .footer_content .office h3 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262626;
+  margin-top: 0;
+}
+
+footer .footer_content .office .icons {
+  padding-top: 30px;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
